@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>
+    #current:home
+</title>
+
+<style>
+* {box-sizing: border-box}
+
+
+body {
+    font-family: Arial;
+    background:white;
+    margin:0;
+}
+ /* css for navigation bar*/
+
+
+/* Change color on hover */
+.current_news a:hover {
+    background-color: #4CAF50;
+    color: black;
+}
+
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  
+ /* position: relative;*/
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+  @-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+  
+  
+  
+  
+
+</style>
+</head>
+<body>
+    <div class="current_news" >
+    <ul style="list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #125688;
+    position: fixed;
+    top: 0;
+    width: 100%;">
+        <li style=" float: left;"><a class="act" href="home_website.html" style=" background-color:#1abc9c ;display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;">HOME</a></li>
+        <li style=" float: left;"><a href="index.html" style="display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;">INDEX</a></li>
+        <li style=" float: left;"><a href="previous.html" style="display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;">PREVIOUS COLLECTION</a></li>
+        <li style=" float: left;"><a href="member.html" style="display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;">MEMBERSHIP</a></li>
+        <li style=" float: left;"><a href="contact.html" style="display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;">CONTACT</a></li>
+        <li style=" float: right;"><a href="login.html" style="display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;">LOGIN</a></li>
+        </ul>
+    </div> <br>
+
+    
+
+    <div class="slideshow-container" >
+
+<div class="mySlides fade">
+  
+  <img src="ps2.jpg" style="width:100%;height: 658px;" class="Slides" title="this image is from...">
+ 
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="ps5.jpg" style="width:100%; height: 658px;" class="Slides" title="this image is from...">
+  
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="ps4.jpg" style="width:100% ; height: 658px;" class="Slides" title="this image is from...">
+ 
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<br><br><br><br><br>
+
+        
+ <!-- logo-->              
+<center> <img src="lo.jpg" style="  height: 200px;width: 800px; ">
+   </center>
+              
+    
+                
+    
+
+<br><br><br>
+
+    
+
+<br><br>
+<!--news nav-->
+<center><div class="newsnav" style="  width: 50% ;overflow: hidden;
+    background-color: white;">
+    <a href="article1.html" style=" background-color:#1abc9c; float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;" >#meToo</a>
+    <a href="article4.html"  style="background-color: #a4c639;
+       float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;" >
+#wedingBells</a>
+    <a href="article2.html" style=" background-color: #ea4c89;
+       float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;" >#section377</a>
+    <a href="article3.html"  style="float: left;background-color: #00bcd4;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;" >#section497</a>
+  <a href="article6.html" style="float:right; float: left;background-color: #ff5500;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;" >#tripleTalaq</a>
+    </div></center> 
+<br>
+<br><br><br><br>
+ 
+
+
+<p style=" padding:10px;padding-left: 150px; font-size: 45px;font-family: cursive;">Trending News:</p>
+<hr style="width:90%">
+
+<div class="row">
+  <div class="column">
+      <center><img src="mt.jpg" style="height:200px;width: 200px; border-radius: 100px;">
+          <h2>&QUOT;MeeToo&QUOT;</h2>
+    <p>The Me Too movement (or #MeToo movement), with many local and international alternatives, is a movement against sexual harassment and sexual assault.</p>
+    <a href="article1.html"style="text-decoration:none;color: black;"><b>Read More</b></a>
+      </center></div>
+  <div class="column">
+      <center><img src="sc.jpg" style="height:200px;width: 200px; border-radius: 100px;">
+          <h2>&QUOT;Section377&QUOT;</h2>
+    <p>it is used to criminalize sexual activities "against the order of nature". On 6 September 2018, the Supreme Court of India ruled that the application of Section 377 to consensual homosexual sex between adults was unconstitutional, "irrational, indefensible and manifestly arbitrary"</p>
+      <a href="article2.html"style="text-decoration:none;color: black;"><b>Read More</b></a>
+      </center></div>
+ <div class="column">
+      <center><img src="ad.jpg" style="height:200px;width: 200px; border-radius: 100px;">
+          <h2>&QUOT;Section497&QUOT;</h2>
+    <p>Section 497 of the Indian Penal Code was dealing with adultery. As per Indian law, a woman cannot be punished for the offence of adultery. Only a man who has consensual sexual intercourse with the wife of another man without his consent can be punished </p>
+     <a href="article3.html"style="text-decoration:none;color: black;"><b>Read More</b></a>
+      </center></div>
+    <hr style="width:90%">
+</div>
+<br><br><br><br><br><br><br>
+<div style="padding-bottom:30px">
+    <div style="float:left;width: 50%;background-color: white">
+        <img src="dv.jpg" style="width:100%;height: 550px">
+    </div>
+     <div style="float:left;width: 50%;height: 550px;text-align: center;background-color:whitesmoke">
+         <a href="article4.html" > <img src="p1.jpg" style="width:100%;height: 550px;"></a>
+    </div>
+    <div style="float:left;width: 50%;height: 550px;text-align: center;background-color:whitesmoke">
+        <a href="article5.html"> <img src="p2.jpg" style="width:100%;height: 550px"></a>
+        
+    </div>
+    <div style="float:left;width: 50%;background-color: white">
+        <img src="st.jpg" style="width:100%;height: 550px">
+    </div>
+    <div style="float:left;width: 50%;background-color: white">
+        <img src="tt1.jpg" style="width:100%;height: 550px">
+    </div>
+    <div style="float:left;width: 50%;height: 550px;text-align: center;background-color:whitesmoke">
+        <a href="article6.html"> <img src="p3.jpg" style="width:100%;height: 550px"></a>
+        
+    </div>
+    
+</div>
+<br><br><br><br><br><br>
+<div style="padding:30px;">
+<center>
+    <br><br><br>
+    <h1 style="font-family:sans-serif;font-size: 35px;color: #4CAF50">
+        &QUOT;Our motto is to keep you #updated...&QUOT;
+    </h1>
+</center></div>
+<div id="contact" style="padding: 20px; background-color:black;text-align: center;margin-top: 0px; color:white;" >
+    <br><br>
+    <a href="abtus.html" style=" color: white; text-decoration: none"> ABOUT US  </a>|<a href="privpol.html" style=" color: white; text-decoration: none">  PRIVACY POLICY  </a>|<a href="contact.html" style=" color: white; text-decoration: none">  CONTACT  </a>|<a href="subscription.html" style=" color: white; text-decoration: none">  SUBSCRIBE  </a>|<a href="benefits.html" style=" color: white; text-decoration: none">  BENEFITS  </a>
+    <br><br>
+     face book  |  mail  |  instagram  |  snapchat
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html> 
+

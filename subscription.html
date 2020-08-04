@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #007bb5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {font-family: serif;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+</style>
+</head>
+<body>
+
+<center><h1 style="font-family:cursive;"> SUBSCRIPTION</h1></center>
+
+<div class="container">
+  <div style="text-align:center">
+      <h2 style="font-family:serif">CONTACT US</h2>
+    <p style="font-family:serif">ENTER YOUR DETAILS</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="tt1.jpg" style="width:100%">
+    </div>
+    <div class="column">
+        <form>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+        <label for="country">Country</label>
+        <select id="country" name="country" required>
+          <option value="INDIA">INDIA</option>
+          <option value="canada">CANADA</option>
+          <option value="usa">USA</option>
+        </select>
+        <label for="city">City</label>
+        <select id="city" name="city" required>
+          <option value="delhi">DELHI</option>
+          <option value="mumbai">MUMBAI</option>
+          <option value="vadodara">VADODARA</option>
+          <option value="ny">NEW YORK </option>
+        </select>
+        <label for="number">Mobile number</label>
+        <input type="text" id="mn" name="mobilenumber" placeholder="enter your number with country code." size="10" required>
+        <label for="email">Email</label>
+        <input type="text" id="mail" name="mail" placeholder="enter your email ID" required>
+        <label for="pack"> Select your subscription pack:</label> <br>
+        <input type="radio" name="subs" value="gold" checked style="font-family:serif ; color: #125688"> GOLD PACK<br>
+        <input type="radio" name="subs" value="diamond" style="font-family:serif ; color: #125688"> DIAMOND PACK<br>
+        <input type="radio" name="subs" value="premium" style="font-family:serif ; color: #125688"> PREMIUM PACK  
+        <br><br>
+        <label for="number">password</label>
+        <input type="text" id="x1" name="pwd" placeholder="password"  required>
+        <label for="number">Confirm password</label>
+        <input type="text" id="x2" name="cpwd" placeholder="confirm password"  required>
+       
+        <input type="submit" value="Submit" onClick="func()">
+      </form>
+    </div>
+  </div>
+
+ <center><div class="newsnav" style="  width: 7% ;overflow: hidden;
+                   background-color: white;">
+              <a href="member.html" style="font-family: cursive; background-color:#125688; float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;font-size: 20px;border: 1px;" >PLANS</a>
+          </div></center>
+</div>
+<script>
+    function func()
+    {
+        var text1= document.getElementById("x1").value;
+        var text2= document.getElementById("x2").value;
+        if(text1!==text2)
+            
+        {
+            alert("input in password and confirm password field must be same");
+        }
+       
+    }
+</script>
+</body>
+</html>
